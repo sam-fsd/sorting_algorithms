@@ -3,12 +3,11 @@
  * selection_sort - Does selection sort
  * @array: array of integers
  * @size: size of array
- * 
+ *
  */
 
 void selection_sort(int *array, size_t size)
 {
-	
 	size_t i, j, temp, min_pos;
 
 	if (array == NULL || size == 0)
@@ -24,7 +23,7 @@ void selection_sort(int *array, size_t size)
 		{
 			if (array[j] < array[min_pos])
 				min_pos = j;
-		}	
+		}
 		if (min_pos != i)
 		{
 			temp = array[i];
